@@ -15,11 +15,13 @@ describe Pizza::Pie do
     end 
 
     it 'defaults the toppings to cheese only, if the pizza has no toppings'do
-    pizza = Pizza::Pie.new
+      pizza = Pizza::Pie.new
 
       expect(pizza.toppings.size).to eq(1)
-      expect(pizza.toppigs.first.name).to eq('cheese')
-      end    
+      expect(pizza.toppings.first.name).to eq('cheese')
+    end    
+
+
 
   end
 end
